@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Javascript practice</title>
+    </head>
+
+    <body>
+
+<script>
+//Answer 1
+
+
+function calculateDiscountedAmount(totalPurchaseAmount) {
+  let discountedAmount = 0;
+
+ if (totalPurchaseAmount >= 50 && totalPurchaseAmount <= 100) {
+    
+    discountedAmount = totalPurchaseAmount * 0.05;
+  } else if (totalPurchaseAmount >=100 && totalPurchaseAmount <= 200) {
+    
+    discountedAmount = totalPurchaseAmount * 0.1;
+  } else if (totalPurchaseAmount >=200) {
+    
+    discountedAmount =  totalPurchaseAmount * 0.15;
+  }
+
+  return discountedAmount;
+}
+
+
+const totalPurchaseAmount = 60;
+const discountedAmount = calculateDiscountedAmount(totalPurchaseAmount);
+
+document.write("Total Purchase Amount: $" + totalPurchaseAmount+"<br>");
+document.write("Discounted Amount: $" + discountedAmount+"<br>");
+document.write("Discount Amount: $" + (totalPurchaseAmount - discountedAmount+"<br>"));
+
+
+//Answer 2
+
+
+function filterEvenNumbers(inputArray) {
+            
+            let filteredArray = [];
+
+          
+            for (let i = 0; i < inputArray.length; i++) {
+                if(inputArray[i]>0){
+                  if (inputArray[i] % 2 === 0) {
+                   
+                   filteredArray.push(inputArray[i]);
+               }
+                }
+            }
+
+            
+            return filteredArray;
+        }
+
+      
+        const originalArray = [0,-2,-5,8,12, 34, 45, 23, 6, 78, 54, 90];
+
+
+        const filteredEvenNumbers = filterEvenNumbers(originalArray);
+
+    
+        document.write('Original Array:', originalArray+"<br>");
+        document.write('Filtered Even Numbers:', filteredEvenNumbers);
+
+
+
+//answer 3
+
+
+function generateMultiplicationTable(number) {
+  for (let i = 1; i <= 10; i++) {
+    const result = i * number;
+    document.write(`${i} * ${number} = ${result} <br>`);
+  }
+}
+
+const inputNumber = 5;
+document.write(`Generate Multiplication Table for: ${inputNumber}<br>`);
+generateMultiplicationTable(inputNumber);
+
+
+
+//answer 4  
+
+function calculateGrade(score) {
+  
+  const roundedScore = Math.round(score);
+
+  
+  switch (true) {
+    case (roundedScore >= 90):
+      return 'A';
+    case (roundedScore >= 80 && roundedScore < 90):
+      return 'B';
+    case (roundedScore >= 70 && roundedScore < 80):
+      return 'C';
+    case (roundedScore >= 60 && roundedScore < 70):
+      return 'D';
+    default:
+      return 'F';
+  }
+}
+
+const studentScore = 80;
+const grade = calculateGrade(studentScore);
+document.write(`Student's score: ${studentScore} Grade: ${grade}`);
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

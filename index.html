@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <title>Javascript practice</title>
+    </head>
+
+    <body>
+
+<script>
+   
+// if else
+
+//    var marks =12;
+
+// if(marks>=80 && marks<= 100){
+//     document.write(`A+`);
+// }
+
+// else if (marks<80 && marks>=70){
+//     document.write(`A`);
+// }
+
+// else if (marks<70 && marks>=60){
+//     document.write(`A-`);
+// }
+
+// else if (marks<60 && marks>=50){
+//    document.write(`B`);
+// }
+// else if (marks<50 && marks>=40){
+//    document.write(`C`);
+// }
+// else if (marks<40 && marks>=33){
+//    document.write(`D`);
+// }else {
+//    document.write(`F`);
+// }
+
+// var Marks=78;
+
+// switch(true){
+
+//     case (Marks<=100 && Marks>=80):
+//       document.write(`A+`);
+//       break;
+
+//       case (Marks<=80 && Marks>=70):
+//       document.write(`A`);
+//       break;
+      
+//       case (Marks<=70 && Marks>=60):
+//       document.write(`A-`);
+//       break;
+
+//       case (Marks<=60 && Marks>=50):
+//       document.write(`B`);
+//       break;
+
+//       case (Marks<=50 && Marks>=40):
+//       document.write(`C`);
+//       break;
+//       case (Marks<=40 && Marks>=33):
+//       document.write(`D`);
+//       break;
+
+//       default :
+//       document.write(`F`);
+
+
+// }
+
+//using loop for create button it was entry controll loop
+/* var i;
+
+for(i=0;i<10;i=i+1){
+
+  if(i===3){
+    continue;
+  }
+
+  if(i===7){
+    break;
+  }
+    document.write(i+"<button>Submit using For Loop</button> <br>");
+}
+*/ 
+
+   /* var i=0;
+
+    while(i<3){
+        document.write(i+"<button>Submit using while Loop</button> <br>");
+        i=i+1
+    }
+*/ 
+
+  /* var i=0;
+   do{
+    document.write(i+"<button>Submit using do while Loop</button> <br>");
+        i=i+1;
+   }while (i<3)
+*/
+     /*  function addTwoNumber(){
+        var num1= 20;
+        var num2 =30;
+        var num3 =num1+num2;
+        document.write(num3+"<br>");
+       }
+
+       addTwoNumber();
+       addTwoNumber();
+
+*/
+       
+
+  /* function addTwoNumber(num1,num2){
+    var num3 = num1+num2;
+    document.write(num3+"<br>");
+   }
+
+   addTwoNumber(10,30);
+   addTwoNumber(25,20);
+   addTwoNumber(14,15);
+*/  
+
+  /*   function writeMyName(name){
+        document.write(name+"<br>");
+     }
+
+     writeMyName("ahad");
+     writeMyName("miaji");
+     writeMyName("lincon");
+
+*/ 
+ /*
+    function addTwoNumberAndNames(){
+        // return n1+n2;
+        return "Ahad"
+
+    }
+
+    // var newValue=addTwoNumber(5,3)+10;
+    var newValue= addTwoNumberAndNames()+"miaji";
+    document.write(newValue);
+   
+   */
+     
+    // ArrayFilter
+
+    /*
+   var numArray=[30,32,40,50,60,70,80,90];
+
+   var result= numArray.filter(function(item){
+
+   return item>50
+
+   });
+
+   document.write(result);
+*/ 
+
+//ArrayFind&findIndex
+ 
+// function getIndex(arr,item){
+//      var result =arr.findIndex(function(value){
+//       return value===item
+//      })
+
+//      return result;
+// }
+
+
+
+//  var numArray=[80,56,79,65];
+ 
+
+ 
+
+//  document.write(getIndex(numArray,65));
+
+ 
+function filterEvenNumbers(inputArray) {
+            
+            let filteredArray = [];
+
+          
+            for (let i = 0; i < inputArray.length; i++) {
+                if (inputArray[i] % 2 === 0) {
+                   
+                    filteredArray.push(inputArray[i]);
+                }
+            }
+
+            
+            return filteredArray;
+        }
+
+      
+        const originalArray = [12, 34, 45, 23, 6, 78, 54, 90];
+
+
+        const filteredEvenNumbers = filterEvenNumbers(originalArray);
+
+    
+        document.write('Original Array:', originalArray+"<br>");
+        document.write('Filtered Even Numbers:', filteredEvenNumbers);
+
+function multiplicationTable(number){
+        for(let i = 1; i<=10 ; i++){
+            document.write(i + "X" + number + "=" + i* number);
+        };
+    };
+
+
+
+
+</script>
+
+
+    </body>
+</html>
